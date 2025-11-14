@@ -1,0 +1,18 @@
+<style>
+        /* ==================== MOBILE FRAME & LAYOUT STYLES ==================== */
+        /* Main mobile device frame simulation */
+        .mobile-frame { width: 375px; height: 812px; background: #1a1a1a; border-radius: 40px; position: relative; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75); margin: 20px auto; }
+        /* Screen area inside mobile frame */
+        .screen { width: 100%; height: calc(100% - 40px); background: white; position: absolute; top: 20px; border-radius: 30px; overflow: hidden; display: flex; flex-direction: column; }
+        /* iPhone-style notch at top */
+        .notch { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 200px; height: 30px; background: #1a1a1a; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; z-index: 10; }
+        /* Status bar with time and connectivity info */
+        .status-bar { height: 30px; display: flex; justify-content: space-between; padding: 0 15px; align-items: center; background: white; z-index: 5; }
+        /* Bottom navigation buttons container */
+        .nav-buttons { height: 40px; display: flex; justify-content: center; gap: 25px; align-items: center; position: absolute; bottom: 10px; width: 100%; }
+        /* Individual navigation button style */
+        .nav-button { width: 30px; height: 5px; background: #ddd; border-radius: 10px; cursor: pointer; transition: background 0.3s; }
+        .nav-button:hover { background: #059669; }
+        /* Main content area that scrolls */
+        .app-content { flex: 1; overflow-y: auto; padding: 5px; }
+        /* ==================== END MOBILE FRAME & LAYOUT STYLES ===============
